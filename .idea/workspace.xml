@@ -20,15 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bd7b1fc-8adc-4c62-9ad2-78b3f827324b" name="Default Changelist" comment="added nltk POS functionality">
+      <change afterPath="$PROJECT_DIR$/CodeIMightNeedLater.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Word.py" beforeDir="false" afterPath="$PROJECT_DIR$/Word.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1dU64G5NS9OPTgszdEGTduPeJFf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -47,7 +58,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Test">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Amadeus-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,8 +103,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Test" />
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -128,6 +139,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -135,22 +147,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="added nltk POS functionality" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="125" key="GridCell.Tab.0.bottom" timestamp="1592551645716">
+    <state width="1259" height="125" key="GridCell.Tab.0.bottom" timestamp="1592601534339">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1259" height="125" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1592551645716" />
-    <state width="1259" height="125" key="GridCell.Tab.0.center" timestamp="1592551645714">
+    <state width="1259" height="125" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1592601534339" />
+    <state width="1259" height="125" key="GridCell.Tab.0.center" timestamp="1592601534338">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1259" height="125" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1592551645714" />
-    <state width="1259" height="125" key="GridCell.Tab.0.left" timestamp="1592551645714">
+    <state width="1259" height="125" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1592601534338" />
+    <state width="1259" height="125" key="GridCell.Tab.0.left" timestamp="1592601534338">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1259" height="125" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1592551645714" />
-    <state width="1259" height="125" key="GridCell.Tab.0.right" timestamp="1592551645715">
+    <state width="1259" height="125" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1592601534338" />
+    <state width="1259" height="125" key="GridCell.Tab.0.right" timestamp="1592601534338">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1259" height="125" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1592551645715" />
+    <state width="1259" height="125" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1592601534338" />
     <state x="141" y="23" width="997" height="709" key="SettingsEditor" timestamp="1592468102119">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
@@ -163,9 +175,9 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="428" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.709@0.23.1280.709" timestamp="1592469892354" />
-    <state x="329" y="173" key="git4idea.merge.GitPullDialog" timestamp="1592556814710">
+    <state x="329" y="173" key="git4idea.merge.GitPullDialog" timestamp="1592557196095">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="329" y="173" key="git4idea.merge.GitPullDialog/0.23.1280.709@0.23.1280.709" timestamp="1592556814710" />
+    <state x="329" y="173" key="git4idea.merge.GitPullDialog/0.23.1280.709@0.23.1280.709" timestamp="1592557196095" />
   </component>
 </project>

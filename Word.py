@@ -1,8 +1,8 @@
 class Word:
     def __init__(self):
         self.OverallIndex = 0
-        self.word = self
-        # self.WordType = a
+        self.word = None
+        self.WordType = None
         self.Response = [None] * 1000
         self.Likely = [0] * 1000
 
@@ -29,3 +29,6 @@ class Word:
 
     def setWord(self, word):
         self.word = word
+
+    def setType(self, wordType):
+        self.wordType = wordType
