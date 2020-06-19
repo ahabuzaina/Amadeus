@@ -1,4 +1,22 @@
+import speech_recognition as sr
+import pyttsx3
+import nltk
+
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize, sent_tokenize
+# stop_words = set(stopwords.words('english'))
+# nltk.download('stopwords')
+
 from Word import Word
+
+r = sr.Recognizer()
+
+
+def SpeakText(command):
+    # Initialize the engine
+    engine = pyttsx3.init()
+    engine.say(command)
+    engine.runAndWait()
 
 
 def search(arr, x):
@@ -1097,13 +1115,74 @@ class Main:
         obj.setWord(Dictionary[i])
         i += 1
 
-    input = "i am a very good guy"
-    response = "sure buddy"
-    parseInput = input.split(" ")
-    parseResponse = response.split(" ")
-    for i in range(len(parseInput)):
-        result = search(Dictionary, parseInput[i])  # result contains index of word object!
-        for j in range(len(parseResponse)):
-            words[result].updateReply(parseResponse[j])
-        print("the word is = " + words[result].word)
-        print("reply is = " + words[result].getReply())
+    # Loop infinitely for user to
+    # speak
+
+    # while (1):
+    #
+    #     # Exception handling to handle
+    #     # exceptions at the runtime
+    #     try:
+    #
+    #         # use the microphone as source for input.
+    #         with sr.Microphone() as source2:
+    #
+    #             # wait for a second to let the recognizer
+    #             # adjust the energy threshold based on
+    #             # the surrounding noise level
+    #             r.adjust_for_ambient_noise(source2, duration=0.2)
+    #
+    #             # listens for the user's input
+    #             audio2 = r.listen(source2)
+    #
+    #             # Using google to recognize audio
+    #             MyText = r.recognize_google(audio2)
+    #             MyText = MyText.lower()
+    #
+    #             print("Did you say " + MyText)
+    #
+    #             if MyText == "exit":
+    #                 break
+    #
+    #             SpeakText(MyText)
+    #
+    #
+    #     except sr.RequestError as e:
+    #         print("Could not request results; {0}".format(e))
+    #
+    #     except sr.UnknownValueError:
+    #         print("unknown error occured")
+    #     except:
+    #         l = 0
+
+    MyText = "hello world"
+    tokenized = sent_tokenize(MyText)
+    for i in tokenized:
+        # Word tokenizers is used to find the words
+        # and punctuation in a string
+        wordsList = nltk.word_tokenize(i)
+
+        # removing stop words from wordList
+        # wordsList = [w for w in wordsList if not w in stop_words]
+
+        #  Using a Tagger. Which is part-of-speech
+        # tagger or POS-tagger.
+        tagged = nltk.pos_tag(wordsList)
+
+
+        print(tagged)
+
+
+
+    # input = "i am a very good guy"
+    # response = "sure buddy"
+
+    # parseInput = input.split(" ")
+    # parseResponse = response.split(" ")
+    #
+    # for i in range(len(parseInput)):
+    #     result = search(Dictionary, parseInput[i])  # result contains index of word object!
+    #     for j in range(len(parseResponse)):
+    #         words[result].updateReply(parseResponse[j])
+    #     print("the word is = " + words[result].word)
+    #     print("reply is = " + words[result].getReply())
