@@ -19,15 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd7b1fc-8adc-4c62-9ad2-78b3f827324b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Amadeus-master.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="57ea410d-3a52-47e8-b410-0253e14606ff" name="Default Changelist" comment="prepull">
+      <change beforePath="$PROJECT_DIR$/.idea/Amadeus-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Amadeus-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Word.py" beforeDir="false" afterPath="$PROJECT_DIR$/Word.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1dU64G5NS9OPTgszdEGTduPeJFf" />
+  <component name="ProjectId" id="1dU0RTTrEwQooMpYW20TeuSEbEj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -47,14 +45,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.Test">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Amadeus-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,17 +73,17 @@
       <method v="2" />
     </configuration>
     <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Amadeus-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Tranqualizer\PycharmProjects\ProjectAI\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -99,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Main" />
         <item itemvalue="Python.Test" />
+        <item itemvalue="Python.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -109,11 +105,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5bd7b1fc-8adc-4c62-9ad2-78b3f827324b" name="Default Changelist" comment="" />
-      <created>1592467131945</created>
+      <changelist id="57ea410d-3a52-47e8-b410-0253e14606ff" name="Default Changelist" comment="" />
+      <created>1592464355840</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1592467131945</updated>
+      <updated>1592464355840</updated>
     </task>
     <servers />
   </component>
@@ -127,34 +123,49 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="prepull" />
+    <option name="LAST_COMMIT_MESSAGE" value="prepull" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="125" key="GridCell.Tab.0.bottom" timestamp="1592519368989">
-      <screen x="0" y="23" width="1280" height="709" />
+    <state x="3169" y="355" key="#Test" timestamp="1592535868782">
+      <screen x="2560" y="355" width="1920" height="1040" />
     </state>
-    <state width="1259" height="125" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1592519368989" />
-    <state width="1259" height="125" key="GridCell.Tab.0.center" timestamp="1592519368988">
-      <screen x="0" y="23" width="1280" height="709" />
+    <state x="3169" y="355" key="#Test/0.0.2560.1400/2560.355.1920.1040@2560.355.1920.1040" timestamp="1592535868782" />
+    <state x="3247" y="553" key="FileChooserDialogImpl" timestamp="1592531030784">
+      <screen x="2560" y="355" width="1920" height="1040" />
     </state>
-    <state width="1259" height="125" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1592519368988" />
-    <state width="1259" height="125" key="GridCell.Tab.0.left" timestamp="1592519368987">
-      <screen x="0" y="23" width="1280" height="709" />
+    <state x="3247" y="553" key="FileChooserDialogImpl/0.0.2560.1400/2560.355.1920.1040@2560.355.1920.1040" timestamp="1592531030784" />
+    <state width="1893" height="266" key="GridCell.Tab.0.bottom" timestamp="1592551865533">
+      <screen x="2560" y="355" width="1920" height="1040" />
     </state>
-    <state width="1259" height="125" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1592519368987" />
-    <state width="1259" height="125" key="GridCell.Tab.0.right" timestamp="1592519368989">
-      <screen x="0" y="23" width="1280" height="709" />
+    <state width="1893" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.355.1920.1040@2560.355.1920.1040" timestamp="1592551865533" />
+    <state width="1893" height="266" key="GridCell.Tab.0.center" timestamp="1592551865533">
+      <screen x="2560" y="355" width="1920" height="1040" />
     </state>
-    <state width="1259" height="125" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1592519368989" />
-    <state x="141" y="23" width="997" height="709" key="SettingsEditor" timestamp="1592468102119">
-      <screen x="0" y="23" width="1280" height="709" />
+    <state width="1893" height="266" key="GridCell.Tab.0.center/0.0.2560.1400/2560.355.1920.1040@2560.355.1920.1040" timestamp="1592551865533" />
+    <state width="1893" height="266" key="GridCell.Tab.0.left" timestamp="1592551865533">
+      <screen x="2560" y="355" width="1920" height="1040" />
     </state>
-    <state x="141" y="23" width="997" height="709" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1592468102119" />
-    <state x="428" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592469892354">
-      <screen x="0" y="23" width="1280" height="709" />
+    <state width="1893" height="266" key="GridCell.Tab.0.left/0.0.2560.1400/2560.355.1920.1040@2560.355.1920.1040" timestamp="1592551865533" />
+    <state width="1893" height="266" key="GridCell.Tab.0.right" timestamp="1592551865533">
+      <screen x="2560" y="355" width="1920" height="1040" />
     </state>
-    <state x="428" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.709@0.23.1280.709" timestamp="1592469892354" />
+    <state width="1893" height="266" key="GridCell.Tab.0.right/0.0.2560.1400/2560.355.1920.1040@2560.355.1920.1040" timestamp="1592551865533" />
+    <state x="2914" y="412" key="SettingsEditor" timestamp="1592536148670">
+      <screen x="2560" y="355" width="1920" height="1040" />
+    </state>
+    <state x="2914" y="412" key="SettingsEditor/0.0.2560.1400/2560.355.1920.1040@2560.355.1920.1040" timestamp="1592536148670" />
+    <state x="3282" y="767" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592530770529">
+      <screen x="2560" y="355" width="1920" height="1040" />
+    </state>
+    <state x="3282" y="767" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/2560.355.1920.1040@2560.355.1920.1040" timestamp="1592530770529" />
+    <state x="3180" y="615" key="git4idea.merge.GitPullDialog" timestamp="1592530794204">
+      <screen x="2560" y="355" width="1920" height="1040" />
+    </state>
+    <state x="3180" y="615" key="git4idea.merge.GitPullDialog/0.0.2560.1400/2560.355.1920.1040@2560.355.1920.1040" timestamp="1592530794204" />
   </component>
 </project>
