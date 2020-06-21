@@ -1,10 +1,13 @@
 import speech_recognition as sr
 import pyttsx3
+import pickle
 
 # Initialize the recognizer
 r = sr.Recognizer()
 
-
+with open("save l", "rb") as f:
+    l = pickle.load(f)
+    print(l)
 # Function to convert text to
 # speech
 def SpeakText(command):
@@ -44,12 +47,14 @@ while (1):
                 break
             SpeakText(MyText)
 
-
     except sr.RequestError as e:
         print("Could not request results; {0}".format(e))
 
     except sr.UnknownValueError:
         print("unknown error occured")
     except:
-        l = 0
+        l = 15
+
+        with open("save l", "wb") as f:
+            pickle.dump(l, f)
 
