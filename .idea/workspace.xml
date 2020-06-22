@@ -19,15 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd7b1fc-8adc-4c62-9ad2-78b3f827324b" name="Default Changelist" comment="vc, search and word updating tied together">
-      <change afterPath="$PROJECT_DIR$/save l" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/words" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Amadeus-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Amadeus-master.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5bd7b1fc-8adc-4c62-9ad2-78b3f827324b" name="Default Changelist" comment="pickling added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeIMightNeedLater.py" beforeDir="false" afterPath="$PROJECT_DIR$/CodeIMightNeedLater.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Word.py" beforeDir="false" afterPath="$PROJECT_DIR$/Word.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/words" beforeDir="false" afterPath="$PROJECT_DIR$/words" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592602010771</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="pickling added">
+      <created>1592728615613</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592728615613</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,7 +159,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added nltk POS functionality" />
     <MESSAGE value="vc, search and word updating tied together" />
-    <option name="LAST_COMMIT_MESSAGE" value="vc, search and word updating tied together" />
+    <MESSAGE value="pickling added" />
+    <option name="LAST_COMMIT_MESSAGE" value="pickling added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="369" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592721293878">
@@ -167,22 +171,22 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="378" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.709@0.23.1280.709" timestamp="1592728489967" />
-    <state width="1258" height="109" key="GridCell.Tab.0.bottom" timestamp="1592728490181">
+    <state width="1258" height="109" key="GridCell.Tab.0.bottom" timestamp="1592735425484">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1258" height="109" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1592728490181" />
-    <state width="1258" height="109" key="GridCell.Tab.0.center" timestamp="1592728490180">
+    <state width="1258" height="109" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1592735425484" />
+    <state width="1258" height="109" key="GridCell.Tab.0.center" timestamp="1592735425483">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1258" height="109" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1592728490180" />
-    <state width="1258" height="109" key="GridCell.Tab.0.left" timestamp="1592728490179">
+    <state width="1258" height="109" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1592735425483" />
+    <state width="1258" height="109" key="GridCell.Tab.0.left" timestamp="1592735425483">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1258" height="109" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1592728490179" />
-    <state width="1258" height="109" key="GridCell.Tab.0.right" timestamp="1592728490180">
+    <state width="1258" height="109" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1592735425483" />
+    <state width="1258" height="109" key="GridCell.Tab.0.right" timestamp="1592735425484">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state width="1258" height="109" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1592728490180" />
+    <state width="1258" height="109" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1592735425484" />
     <state width="1259" height="174" key="GridCell.Tab.1.bottom" timestamp="1592634421055">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
@@ -207,10 +211,10 @@
       <screen x="0" y="23" width="1280" height="709" />
     </state>
     <state x="109" y="23" width="997" height="709" key="SettingsEditor/0.23.1280.709@0.23.1280.709" timestamp="1592641996063" />
-    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1592602289255">
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2" timestamp="1592728640312">
       <screen x="0" y="23" width="1280" height="709" />
     </state>
-    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1592602289255" />
+    <state x="240" y="117" key="Vcs.Push.Dialog.v2/0.23.1280.709@0.23.1280.709" timestamp="1592728640312" />
     <state width="640" height="354" key="XDebugger.FullValuePopup" timestamp="1592612729048">
       <screen x="0" y="23" width="1280" height="709" />
     </state>

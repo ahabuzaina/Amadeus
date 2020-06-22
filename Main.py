@@ -1783,30 +1783,27 @@ class Main:
     #     print("unknown error occured")
     # except:
     #     l = 0
-    print(words[0].getReply())
-    input = "the king wants to hold an audience"
-    response = "the let him know i will be there"
+    # print(words[30].word)
+    # print(words[200].getAllReplies())
+    conversation = []
     # print(input)
-    # print(response)
-
-    parseInput = input.split(" ")
-    parseResponse = response.split(" ")
-
-    # print(input)
-
-    for n in range(len(parseInput)):
-        resultInput = search(Dictionary, parseInput[n]) // 2
-        # print(words[resultInput].wordType)
-        # result contains index of word object!
-        for j in range(len(parseResponse)):
-            resultResponse = search(Dictionary, parseResponse[j]) // 2
-            # print(words[resultResponse].wordType)
-            if words[resultInput].wordType == words[
-                resultResponse].wordType and resultInput > -1 and resultResponse > -1:
-                words[resultInput].updateReply(parseResponse[j])
-                # print("the word is = " + words[resultInput].word)
-                # print("reply is = " + words[resultInput].getReply())
-            else:
-                l = 0
-    with open("words", "wb") as f:
-        pickle.dump(words, f)
+    for m in range(len(conversation) - 1):
+        input = conversation[m]
+        response = conversation[m+1]
+        parseInput = input.split(" ")
+        parseResponse = response.split(" ")
+        for n in range(len(parseInput)):
+            resultInput = search(Dictionary, parseInput[n]) // 2
+            # print(words[resultInput].wordType)
+            # result contains index of word object!
+            for j in range(len(parseResponse)):
+                resultResponse = search(Dictionary, parseResponse[j]) // 2
+                # print(words[resultResponse].wordType)
+                if words[resultInput].wordType == words[resultResponse].wordType and resultInput > -1 and resultResponse > -1:
+                    words[resultInput].updateReply(parseResponse[j])
+                    # print("the word is = " + words[resultInput].word)
+                    # print("reply is = " + words[resultInput].getReply())
+                else:
+                    l = 0
+        with open("words", "wb") as f:
+            pickle.dump(words, f)

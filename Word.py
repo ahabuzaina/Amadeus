@@ -27,6 +27,9 @@ class Word:
     def getReply(self):
         return self.Response[self.OverallIndex - 1]
 
+    def getAllReplies(self):
+        return self.Response
+
     def setWord(self, word):
         self.word = word
 
