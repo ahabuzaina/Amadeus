@@ -2,7 +2,6 @@ import speech_recognition as sr
 import pyttsx3
 import nltk
 import pickle
-import pyaudio
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
 # stop_words = set(stopwords.words('english'))
@@ -1748,18 +1747,17 @@ class Main:
         words = pickle.load(f)
 
     # print("reply is = " + words[].getReply())
-    while (1):
+    while (True):
         # Exception handling to handle
         # exceptions at the runtime
         try:
-
             # use the microphone as source for input.
             with sr.Microphone() as source2:
                 print("speak now")
                 # wait for a second to let the recognizer
                 # adjust the energy threshold based on
                 # the surrounding noise level
-                r.adjust_for_ambient_noise(source2, duration=0.1)
+                r.adjust_for_ambient_noise(source2, duration = 0.1)
 
                 # listens for the user's input
                 audio2 = r.listen(source2)
@@ -1777,17 +1775,19 @@ class Main:
 
         except sr.RequestError as e:
             print("Could not request results; {0}".format(e))
+            l = 0
 
         except sr.UnknownValueError:
             print("unknown error occured")
+            l = 0
         except:
             l = 0
 
-    parseInput = input.split(" ")
-    for n in range(len(parseInput)):
-        resultInput = search(Dictionary, parseInput[n]) // 2
-        words[resultInput].getReply()
-
+        parseInput = input.split(" ")
+        for n in range(len(parseInput)):
+            resultInput = search(Dictionary, parseInput[n]) // 2
+            print(words[resultInput].getReply())
+        resultInput = 0
 
     with open("words", "wb") as f:
         pickle.dump(words, f)
