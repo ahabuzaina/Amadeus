@@ -1,9 +1,8 @@
 import speech_recognition as sr
 import pyttsx3
 import nltk
-import mysql.connector
-from mysql.connector import errorcode
 import pickle
+import pyaudio
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
 # stop_words = set(stopwords.words('english'))
@@ -1747,63 +1746,48 @@ class Main:
 
     with open("words", "rb") as f:
         words = pickle.load(f)
-    # print("reply is = " + words[].getReply())
-    # while (1):
 
-    # Exception handling to handle
-    # exceptions at the runtime
-    # try:
-    #
-    #     # use the microphone as source for input.
-    #     with sr.Microphone() as source2:
-    #         print("speak now")
-    #         # wait for a second to let the recognizer
-    #         # adjust the energy threshold based on
-    #         # the surrounding noise level
-    #         r.adjust_for_ambient_noise(source2, duration=0.1)
-    #
-    #         # listens for the user's input
-    #         audio2 = r.listen(source2)
-    #
-    #         # Using google to recognize audio
-    #         input = r.recognize_google(audio2)
-    #         input = input.lower()
-    #
-    #         print("Did you say " + input)
-    #
-    #         if input == "goodbye":
-    #             break
-    #
-    #         SpeakText(input)
-    #
-    # except sr.RequestError as e:
-    #     print("Could not request results; {0}".format(e))
-    #
-    # except sr.UnknownValueError:
-    #     print("unknown error occured")
-    # except:
-    #     l = 0
-    # print(words[30].word)
-    # print(words[200].getAllReplies())
-    conversation = []
-    # print(input)
-    for m in range(len(conversation) - 1):
-        input = conversation[m]
-        response = conversation[m+1]
-        parseInput = input.split(" ")
-        parseResponse = response.split(" ")
-        for n in range(len(parseInput)):
-            resultInput = search(Dictionary, parseInput[n]) // 2
-            # print(words[resultInput].wordType)
-            # result contains index of word object!
-            for j in range(len(parseResponse)):
-                resultResponse = search(Dictionary, parseResponse[j]) // 2
-                # print(words[resultResponse].wordType)
-                if words[resultInput].wordType == words[resultResponse].wordType and resultInput > -1 and resultResponse > -1:
-                    words[resultInput].updateReply(parseResponse[j])
-                    # print("the word is = " + words[resultInput].word)
-                    # print("reply is = " + words[resultInput].getReply())
-                else:
-                    l = 0
-        with open("words", "wb") as f:
-            pickle.dump(words, f)
+    # print("reply is = " + words[].getReply())
+    while (1):
+        # Exception handling to handle
+        # exceptions at the runtime
+        try:
+
+            # use the microphone as source for input.
+            with sr.Microphone() as source2:
+                print("speak now")
+                # wait for a second to let the recognizer
+                # adjust the energy threshold based on
+                # the surrounding noise level
+                r.adjust_for_ambient_noise(source2, duration=0.1)
+
+                # listens for the user's input
+                audio2 = r.listen(source2)
+
+                # Using google to recognize audio
+                input = r.recognize_google(audio2)
+                input = input.lower()
+
+                print("Did you say " + input)
+
+                if input == "goodbye":
+                    break
+
+                SpeakText(input)
+
+        except sr.RequestError as e:
+            print("Could not request results; {0}".format(e))
+
+        except sr.UnknownValueError:
+            print("unknown error occured")
+        except:
+            l = 0
+
+    parseInput = input.split(" ")
+    for n in range(len(parseInput)):
+        resultInput = search(Dictionary, parseInput[n]) // 2
+        words[resultInput].getReply()
+
+
+    with open("words", "wb") as f:
+        pickle.dump(words, f)
